@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+p {
+  font-size: 13px;
+}
+
+.logoSec {
+  margin: 0px 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #314975;
+}
+
+.mainLogo {
+  width: 100px;
+}
+
+.sectionOne {
+  display: flex;
+  justify-content: stretch;
+}
+
+.sideBar {
+  padding: 50px 40px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: linear-gradient(182.59deg, #1f263e 5.52%, #1a2856 66.16%);
+  border-radius: 0px 43px 43px 0px;
+}
+
+.leagueNavSec,
+.resultsandfixtures,
+.adSec {
+  width: 100%;
+}
+
+.resultsandfixtures,
+.adSec {
+  margin: 30px 0px;
+  padding: 10px 15px;
+  border-radius: 12px;
+  background-color: white;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+
+.leagueNavSec a {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: white;
+  transition: 250ms;
+  padding: 5px 15px;
+  margin: 10px 0px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.leagueNavSec a:hover,
+.leagueNavSec a:focus {
+  background-color: #314875;
+}
+
+.leagueNavSec a img {
+  padding-right: 15px;
+}
+
+.resultSec {
+  padding-bottom: 30px;
+}
+
+.title {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #7b71a8;
+  text-transform: capitalize;
+}
+
+.matchDate {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.teamvs {
+  display: flex;
+  align-items: center;
+  margin: 5px 0px;
+}
+
+.teamA,
+.teamB {
+  flex: 4;
+  margin: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.teamName {
+  color: #28115c;
+}
+
+.teamA .score {
+  text-align: right;
+  color: #1f263e;
+}
+
+.teamB .score {
+  text-align: left;
+  color: #1f263e;
+}
+
+.teamvs p {
+  flex: 1;
+  text-align: center;
+  font-weight: 600;
+}
+
+.teamA img,
+.teamB img {
+  width: 30px;
+}
+
+.adSec {
+  text-align: center;
+  min-height: 300px;
+}
+
+.scoreBody {
+  padding: 50px 30px;
+  width: calc(100% - 350px);
+}
+
+.options {
+  text-transform: capitalize;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  padding: 5px 10px;
+  background-color: #d9d9d9;
+  letter-spacing: 0.5px;
+  font-size: 13px;
+}
+
+.singleMatchScoreSheet {
+  display: flex;
+}
+
+.advertiseSidebar {
+  width: 250px;
+  background-color: white;
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 12px;
+}
+
+.matchSummary {
+  width: calc(100% - 250px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flexBox {
+  width: 30%;
+  min-height: 90px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0px;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.flexTitle {
+  color: #7b71a8;
+}
+
+.flexScore {
+  color: #28115c;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+
+.boxIcon {
+  width: 35px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.finalScore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teamName {
+  display: flex;
+  justify-content: space-between;
+}
+
+.teamName img {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.matchSummaryComparison {
+  width: calc(100% - 250px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flexBoxComparison {
+  width: 30%;
+  min-height: 90px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0px;
+  text-transform: capitalize;
+  position: relative;
+}
