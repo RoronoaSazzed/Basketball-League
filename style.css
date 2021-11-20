@@ -13,6 +13,10 @@ p {
   font-size: 13px;
 }
 
+.toggleBtn {
+  display: none;
+}
+
 .logoSec {
   margin: 0px 20px;
   padding-bottom: 10px;
@@ -37,6 +41,7 @@ p {
   justify-content: space-between;
   background: linear-gradient(182.59deg, #1f263e 5.52%, #1a2856 66.16%);
   border-radius: 0px 43px 43px 0px;
+  position: relative;
 }
 
 .leagueNavSec,
@@ -109,6 +114,11 @@ p {
 
 .teamName {
   color: #28115c;
+}
+
+.teamName span {
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .teamA .score {
@@ -238,4 +248,136 @@ p {
   margin: 15px 0px;
   text-transform: capitalize;
   position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sideBar {
+    padding: 30px 20px;
+    width: 300px;
+  }
+
+  .matchSummary {
+    width: calc(100% - 200px);
+  }
+
+  .scoreBody {
+    padding: 30px;
+    width: calc(100% - 300px);
+  }
+
+  .advertiseSidebar {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flexBox {
+    width: 45%;
+    min-height: 120px;
+  }
+
+  .matchSummary {
+    width: calc(100% - 150px);
+  }
+
+  .singleMatchScoreSheet {
+    display: flex;
+    justify-content: space-between;
+  }
+  .advertiseSidebar {
+    width: 150px;
+  }
+
+  .scoreBody {
+    padding: 15px;
+    width: calc(100% - 300px);
+  }
+
+  .options {
+    padding: 5px 0px;
+  }
+
+  .flexBoxComparison {
+    width: 45%;
+  }
+
+  .matchSummaryComparison {
+    width: calc(100% - 150px);
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionOne {
+    flex-direction: column;
+  }
+
+  .sideBar {
+    width: 100%;
+    padding: 20px;
+    border-radius: 0px 0px 24px 24px;
+  }
+
+  .logoSec {
+    width: 100%;
+    margin: 0;
+    position: relative;
+  }
+
+  .toggleBtn {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .leagueNavSec {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 100px;
+    left: 0%;
+    border-radius: 0px 0px 24px 24px;
+  }
+
+  .scoreBody {
+    padding: 10px;
+    width: calc(100%);
+  }
+
+  .advertiseSidebar {
+    width: 125px;
+  }
+}
+
+@media (max-width: 480px) {
+  .singleMatchScoreSheet {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .matchSummary {
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .advertiseSidebar {
+    width: 100%;
+    margin: 0;
+  }
+
+  .leagueCompare {
+    margin: 30px 0px;
+  }
+
+  .matchSummaryComparison {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .options {
+    margin: 10px;
+  }
 }
