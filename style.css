@@ -167,6 +167,136 @@ p {
   display: flex;
 }
 
+/* New Portion Starts */
+
+.statSubmissionPlayer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statSubmissionPlayer .flexBox {
+  width: 45%;
+  color: white;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+#totalSubmission {
+  background-color: #63d1d1;
+}
+
+#validSubmission {
+  background-color: #527c47;
+}
+
+#malePlayer {
+  background-color: #dd8e55;
+}
+
+#femalePlayer {
+  background-color: #d97c7c;
+}
+
+.statSubmissionPlayer .flexBox img {
+  width: 50px;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+}
+
+.flexRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.basketballCourt {
+  position: relative;
+  padding: 15px;
+}
+
+.bbCourt {
+  max-width: 100%;
+}
+
+.blueP {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #28115c;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.b1 {
+  top: 15%;
+  left: 15%;
+}
+
+.b2 {
+  top: 35%;
+  left: 30%;
+}
+
+.b3 {
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+}
+
+.b4 {
+  bottom: 35%;
+  left: 30%;
+}
+
+.b5 {
+  bottom: 20%;
+  left: 15%;
+}
+
+.greenP {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #0fbb59;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.g1 {
+  top: 15%;
+  right: 15%;
+}
+
+.g2 {
+  top: 35%;
+  right: 30%;
+}
+
+.g3 {
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+}
+
+.g4 {
+  bottom: 35%;
+  right: 30%;
+}
+
+.g5 {
+  bottom: 20%;
+  right: 15%;
+}
+
+/* New Portion Ends */
+
 .advertiseSidebar {
   width: 250px;
   background-color: white;
@@ -181,7 +311,7 @@ p {
   width: calc(100% - 250px);
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: stretch;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -297,9 +427,21 @@ p {
     padding: 5px 0px;
   }
 
+  /* New Portion Starts */
+
+  .flexRow {
+    flex-direction: column;
+  }
+
+  .statSubmissionPlayer .flexBox {
+    width: 40%;
+    min-height: 130px;
+  }
   .flexBoxComparison {
     width: 45%;
   }
+
+  /* New Portion Ends */
 
   .matchSummaryComparison {
     width: calc(100% - 150px);
